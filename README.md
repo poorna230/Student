@@ -37,9 +37,7 @@ The prediction is powered by a **Random Forest Classifier** trained on a dataset
 ┣ 📜 README.md
 ┣ 📜 requirements.txt
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -49,59 +47,39 @@ Edit
 ```bash
 git clone https://github.com/your-username/student-grant-app.git
 cd student-grant-app
+
 Install dependencies
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 Train the model (if not already trained)
-
-bash
-Copy
-Edit
 python train_model.py
-Run the Streamlit app
 
-bash
-Copy
-Edit
+Run the Streamlit app
 streamlit run app.py
+
 🧠 How the Model Works
 Data Preprocessing
-
 Standardizes numeric features (ResearchScore, ProjectScore) using StandardScaler.
-
 One-hot encodes categorical features (OverallGrade, Obedient).
 
 Model Training
-
 Uses RandomForestClassifier with 100 trees for better accuracy and interpretability.
 
 Prediction
-
 Model predicts "Yes" or "No" for grant recommendation.
 
 Also provides the probability (confidence) for "Yes".
-
 📊 Example Prediction
 Input:
 
 Name: John Doe
-
 Grade: A
-
 Obedient: Yes
-
 Research Score: 85
-
 Project Score: 90
 
 Output:
-
 Recommended for Grant ✅
-
 Confidence: 93.45%
-
 Feature Importance Chart
 
