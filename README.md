@@ -20,7 +20,6 @@ The prediction is powered by a **Random Forest Classifier** trained on a dataset
 - **Pandas** and **NumPy** for data processing.
 - **scikit-learn** for machine learning.
 - **Joblib** for saving/loading the model and preprocessing objects.
-- **Matplotlib** for plotting feature importance.
 
 ---
 
@@ -80,6 +79,5 @@ Project Score: 90
 
 Output:
 Recommended for Grant ✅
-Confidence: 93.45%
-Feature Importance Chart
+
 
