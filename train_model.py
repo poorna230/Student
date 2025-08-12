@@ -71,8 +71,8 @@ print(classification_report(y_test, y_pred, zero_division=0))
 os.makedirs('Model', exist_ok=True)
 os.makedirs('Scaler', exist_ok=True)
 
-joblib.dump(model, 'Model/student_grant_model.pkl')
-joblib.dump(scaler, 'Scaler/student_scaler.pkl')
-joblib.dump(feature_names, 'Model/feature_columns.pkl')
+joblib.dump(model, 'student_grant_model.pkl')
+joblib.dump(scaler, 'student_scaler.pkl')
+joblib.dump(feature_names, 'feature_columns.pkl')
 
 print("\n✅ Model, scaler, and feature columns saved successfully.")

@@ -4,9 +4,9 @@ import pandas as pd
 import joblib
 
 # Load model, scaler, and features
-model = joblib.load('Model/student_grant_model.pkl')
-scaler = joblib.load('Scaler/student_scaler.pkl')
-feature_columns = joblib.load('Model/feature_columns.pkl')
+model = joblib.load('student_grant_model.pkl')
+scaler = joblib.load('student_scaler.pkl')
+feature_columns = joblib.load('feature_columns.pkl')
 
 # Title
 st.title("🎓 Student Grant Recommendation App")
